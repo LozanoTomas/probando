@@ -171,7 +171,7 @@ a{
     height: 100vh; /* Altura de la pantalla completa */
     position: relative;
     padding: 20px;
-    background-image: url(/contenedorgrande.jfif);
+    background-image: url(../contenedorgrande.jfif);
     background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
     background-position: center; /* Centra la imagen */
 }
@@ -193,12 +193,12 @@ a{
 }
 
 .section-bg:first-of-type {
-    background-image: url('/yeyyeye.jfif'); /* Imagen de la primera sección */
+    background-image: url('../yeyyeye.jfif'); /* Imagen de la primera sección */
     filter: brightness(0.9); /* Ajusta el brillo para mejorar la visibilidad */
 }
 
 .section-bg:nth-of-type(2) {
-    background-image: url('/conte.jfif'); /* Imagen de la segunda sección */
+    background-image: url('../conte.jfif'); /* Imagen de la segunda sección */
     filter: brightness(0.9); /* Ajusta el brillo para mejorar la visibilidad */
 }
 
