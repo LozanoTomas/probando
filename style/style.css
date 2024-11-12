@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 { font-size: 2.5em; font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);}
+h2 { font-size: 2em; font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);}
+p { font-size: 1em; line-height: 1.6; 
+    line-height: 1.6; letter-spacing: 0.5px; 
+}
+
+.bood {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(163, 163, 163);
+    height: 70px;
+}
+
+.dos {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 0 10px 0 0;
+}
+
+.marca {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    transition: 0.4s;
+}
+
+.menu a{
+    padding: 20px;
+    transition: 1s;
+}
+
+.menu a:hover{
+    color: white;
+    transition: 0.4s;
+}
+
+/*.boton a{
+    padding: 20px;
+}
+
+.boton a:hover{
+    color: white;
+    transition: 0.4s;
+}*/
+
+.importante {
+    padding: 0 20px;
+    background-image: url(../pexels-chanaka-318741-906494.jpg);
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.importante::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    left: 0;
+}
+
+.info {
+    color: white;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h3{
+    padding: 0 0 20px 0;
+}
+
+.info a{
+    color: white;
+    padding: 20px 40px;
+    border: 1px solid black;
+    align-self: baseline;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.info a:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+}
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(165, 165, 165);
+}
+
+.desc {
+    width: 300px;
+}
+
+.fot {
+    display: flex;
+    align-items: center;
+}
+
+.pin {
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px 5px 0;
+}
+
+.pines {
+    display: flex;
+    align-items: center;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: white;
+}
+
+#check {
+    display: none;
+}
+
+/* yoyoyooyoy */
+
+.impo {
+    display: flex;
+    height: 100vh; /* Altura de la pantalla completa */
+    position: relative;
+    padding: 20px;
+    background-image: url(/contenedorgrande.jfif);
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen */
+}
+
+#seccion {
+    width: 50%; /* Cada sección ocupa el 50% del ancho */
+    position: relative;
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que el contenido desbordado sea visible */
+    transition: transform 0.5s ease, z-index 0.5s ease; /* Transición suave para la animación y z-index */
+    z-index: 1; /* Nivel inicial bajo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Añade una sombra suave */
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 10px; /* Espacio entre secciones */
+}
+
+.section-bg:first-of-type {
+    background-image: url('/yeyyeye.jfif'); /* Imagen de la primera sección */
+    filter: brightness(0.9); /* Ajusta el brillo para mejorar la visibilidad */
+}
+
+.section-bg:nth-of-type(2) {
+    background-image: url('/conte.jfif'); /* Imagen de la segunda sección */
+    filter: brightness(0.9); /* Ajusta el brillo para mejorar la visibilidad */
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    position: relative; /* Para que el contenido esté sobre la imagen */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor legibilidad */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2; /* Mantiene el texto encima de la imagen */
+}
+
+h2, p {
+    margin: 0;
+    color: #333;
+    color: #000;
+}
+
+#seccion:hover {
+    transform: scale(1.1); /* Aumenta más el tamaño de la sección */
+    z-index: 10; /* Aumenta el z-index para que se superponga sobre la otra sección */
+    transition: transform 0.5s ease, z-index 0s; /* El z-index cambia instantáneamente para evitar parpadeo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en hover */
+}
+
+/* xdxdxd */
+
+.barco {   
+    padding: 20px;
+    background-color: #4d4d5c;
+}
+
+.volver {
+    background-color: rebeccapurple;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: baseline;
+}
+
+.texto{
+    max-width: 2300px;
+    width: 100%;
+}
+
+.carac{
+    max-width: 800px;
+    width: 100%;
+}
+
+.pepe {
+    display: flex;
+    align-items: center;
+}
+
+.yeyi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.didi{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ambu {
+    font-size: 25px;
+}
+
+.carru {
+    border-radius: 15px;
+    box-shadow: 0 15px 16px rgba(0, 0, 0, 0.3);
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Imagen se adapta al contenedor */
+    max-width: 600px; /* Ajusta el tamaño máximo que quieras para la imagen */
+    height: 400px; /* Mantiene la proporción de la imagen */
+}
+
+.contiti {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    align-self: center;
+    color: white;
+    transition: 0.8s;
+}
+
+.contiti:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+
+.lista {
+    padding: 20px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0 0 0;
+}
+
+.nosi {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.tarjetas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+.imgl {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.lor {
+    padding: 10px;
+}
+
+.jejeez {
+    display: flex;
+    padding: 30px;
+}
+
+.fondim {
+    max-width: 100%;
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.contetete {
+    width: 100%;
+    height: 100vh;
+    background: #2b323c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: yellow;
+}
+
+@media (max-width: 871px) {
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .pie {
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .imaginador {
+        flex-direction: column;
+    }
+
+    .image{
+        height: 50%;
+        width: 100%;
+    }
+
+    .impo{
+        flex-direction: column;
+    }
+
+    #seccion{
+        width: 100%;
+        height: 50%;
+    }
+
+    .pepe {
+        flex-direction: column;
+    }
+
+    .volver {
+        display: none;
+    }
+
+    .jejeez{
+        flex-direction: column;
+        align-items: center;
+    }
+}
